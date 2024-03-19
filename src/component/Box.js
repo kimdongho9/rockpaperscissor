@@ -16,7 +16,8 @@ const Box = (props) => {
     result = props.result;
   }
 
-  
+
+
   if (props.title === "COM") {
     console.log("com", result); 
   }
@@ -28,8 +29,9 @@ const Box = (props) => {
   return (
     <div className={`box ${result}`}> 
       <h1>{props.title}</h1> 
-      <img className="item-img" src={props.item && props.item.img} /> 
-      <h2>{props.result}</h2> 
+      <h2>{props.item && props.item.name}</h2>
+      <img className="item-img" src={props.item && props.item.img} />
+      <h2>{result}</h2>
     </div>
   );
 };
